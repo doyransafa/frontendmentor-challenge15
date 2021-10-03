@@ -1,0 +1,88 @@
+header {
+	background: linear-gradient(
+			90deg,
+			var(--very-light-red-grad) 0%,
+			var(--light-red-grad) 100%
+		),
+		url("/images/bg-pattern-intro.svg");
+	// background-size: contain;
+	// background-repeat: no-repeat;
+	border-radius: 0 0 0 90px;
+	padding-bottom: 100px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+	margin: 0 auto;
+	padding: 55px 0;
+	gap: 35px;
+	max-width: 1111px;
+}
+
+.logos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	.logo-header {
+		width: 80px;
+	}
+
+	.btn-hamburger {
+		width: 35px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	display: none;
+
+	&-expandables,
+	&-login {
+		display: flex;
+		align-items: center;
+	}
+
+	&-items {
+		margin-left: 30px;
+		color: white;
+		font-family: var(--overpass);
+
+		&:hover {
+			text-decoration: underline;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+}
+
+.arrow-down {
+	width: 10px;
+}
+
+// .hide-desktop,
+// .hide-mobil {
+// 	display: none;
+// }
+
+.header-container {
+	width: 85%;
+	margin: 40px auto;
+}
+
+.cta {
+	margin: 40px 0;
+	display: flex;
+	justify-content: center;
+	gap: 17px;
+}

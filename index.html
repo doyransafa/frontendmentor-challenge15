@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/app/scss/styles.css">
+  <script src="/app/js/app.js"></script>
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logos">
+        <img src="images/logo.svg" alt="" class="logo-header">
+        <img src="images/icon-hamburger.svg" alt="" class="btn-hamburger hide-desktop">
+      </div>
+      <ul class="nav-list hide-mobile">
+        <div class="nav-list-expandables">
+          <li class="nav-list-items">Product <img src="images/icon-arrow-light.svg" alt="" class="arrow-down"></li>
+          <li class="nav-list-items">Company <img src="images/icon-arrow-light.svg" alt="" class="arrow-down"></li>
+          <li class="nav-list-items">Connect <img src="images/icon-arrow-light.svg" alt="" class="arrow-down"></li>
+        </div>
+        <div class="nav-list-login">
+          <li class="nav-list-items">Login</li>
+          <li class="nav-list-items"> <button class="btn btn-white">Sign Up</button></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="mobile-menu mb-close">
+      <ul class="mb-nav-list mb-nav-list-top">
+        <li class="mb-nav-items mb-nav-item-1">Product <img src="images/icon-arrow-dark.svg" alt="" class="arrow-down"></li>
+          <ul class="mb-nav-sub-list mb-nav-sub-list-1 mb-sub-list-close">
+            <li class="mb-nav-sub-items">Overview</li>
+            <li class="mb-nav-sub-items">Pricing</li>
+            <li class="mb-nav-sub-items">Marketplace</li>
+            <li class="mb-nav-sub-items">Features</li>
+            <li class="mb-nav-sub-items">Integrations</li>
+          </ul>
+        <li class="mb-nav-items mb-nav-item-2">Company <img src="images/icon-arrow-dark.svg" alt="" class="arrow-down"></li>
+          <ul class="mb-nav-sub-list mb-nav-sub-list-2 mb-sub-list-close">
+            <li class="mb-nav-sub-items">About</li>
+            <li class="mb-nav-sub-items">Team</li>
+            <li class="mb-nav-sub-items">Blog</li>
+            <li class="mb-nav-sub-items">Careers</li>
+          </ul>
+        <li class="mb-nav-items mb-nav-item-3">Connect <img src="images/icon-arrow-dark.svg" alt="" class="arrow-down"></li>
+          <ul class="mb-nav-sub-list mb-nav-sub-list-3 mb-sub-list-close">
+            <li class="mb-nav-sub-items">Contact</li>
+            <li class="mb-nav-sub-items">Newsletter</li>
+            <li class="mb-nav-sub-items">LinkedIn</li>
+          </ul>
+      </ul>
+      <ul class="mb-nav-list mb-nav-list-bottom">
+        <li class="mb-nav-items">Login</li>
+        <li class="mb-nav-items"><button class="btn btn-gradient">Sign Up</button></li>
+      </ul>
+    </div>
+    <div class="header-container">
+      <h1 class="main-title">A modern publishing platform</h1>
+      <p class="main-subtitle">Grow your audience and build your online brand</p>
+      <div class="cta">
+        <button class="btn btn-white">Start for Free</button>
+        <button class="btn btn-transparent">Learn More</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section__first">
+    <div class="section__container">
+      <h2 class="section-title">Designed for the future</h2>
+        <img src="/images/illustration-editor-mobile.svg" alt="editor illustration" class="mbl-img">
+        <div class="text-container">
+          <div class="text-card">
+            <h3 class="section-subtitle">Introducing an extensible editor</h3>
+            <p class="text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            change the looks of a blog.</p>
+          </div>
+          <div class="text-card">
+            <h3 class="section-subtitle">Robust content management</h3>
+            <p class="text">Flexible content management enables users to easily move through posts. Increase the usability of your blog
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section section__middle">
+      <img src="/images/illustration-phones.svg" alt="mobile phone illustration" class="mobile-phones">
+      <div class="text-card">
+        <h2 class="section-title section-title__white">State of the Art Infrastructure</h2>
+        <p class="text text__white">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      </div>
+  </section>
+
+  <section class="section section__last">
+    <div class="section__container">
+      <img src="/images/illustration-laptop-mobile.svg" alt="laptop illustration" class="mbl-img">
+      <div class="text-container">
+        <div class="text-card">
+          <h3 class="section-subtitle">Free, open, simple</h3>
+          <p class="text">Blogr is a free and open source application backed by a large community of helpful developers. It supports
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+        </div>
+        <div class="text-card">
+          <h3 class="section-subtitle">Powerful tooling</h3>
+          <p class="text">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="images/logo.svg" alt="" class="logo-footer">
+    <ul class="footer-list">
+      <li class="footer-list-items">Product</li>
+      <li class="footer-list-items">Overview</li>
+      <li class="footer-list-items">Pricing</li>
+      <li class="footer-list-items">Marketplace</li>
+      <li class="footer-list-items">Features</li>
+      <li class="footer-list-items">Integrations</li>
+    </ul>
+    <ul class="footer-list">
+      <li class="footer-list-items">Company</li>
+      <li class="footer-list-items">About</li>
+      <li class="footer-list-items">Team</li>
+      <li class="footer-list-items">Blog</li>
+      <li class="footer-list-items">Careers</li>
+    </ul>
+    <ul class="footer-list">
+      <li class="footer-list-items">Connect</li>
+      <li class="footer-list-items">Contact</li>
+      <li class="footer-list-items">Newsletter</li>
+      <li class="footer-list-items">LinkedIn</li>
+    </ul>
+  </footer>
+
+
+  <!-- 
+  
+
+  
+  
+  
+  
+  Login
+  Sign Up
+
+
+  Start for Free
+  Learn More
+
+
+  
+
+
+
+
+  
+  
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+</body>
+</html>

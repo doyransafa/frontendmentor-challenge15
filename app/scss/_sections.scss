@@ -1,0 +1,40 @@
+.section {
+	padding: 100px 0;
+
+	.section__container {
+		width: 100%;
+		// max-width: 700px;
+		margin: 0 auto;
+	}
+}
+
+.section__middle {
+	background-color: var(--very-dark-gray-blue);
+	border-radius: 0 90px 0 90px;
+	background-image: url("/images/bg-pattern-circles.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top -500px;
+	margin-top: 80px;
+}
+
+.mbl-img {
+	padding: 50px 0;
+	max-width: 500px;
+}
+
+.mobile-phones {
+	// position: relative;
+	// top: -270px;
+	max-width: 500px;
+	margin-top: -270px;
+}
+
+.text-card {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.text-card {
+	margin-bottom: 55px;
+}
